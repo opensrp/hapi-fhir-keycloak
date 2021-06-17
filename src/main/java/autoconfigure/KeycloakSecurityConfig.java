@@ -38,10 +38,9 @@ public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
 
 	private static final String CORS_ALLOWED_HEADERS = "origin,content-type,accept,x-requested-with,Authorization";
 
-	private String opensrpAllowedSources="";
+	private String opensrpAllowedSources = "";
 
-	private long corsMaxAge=60;
-
+	private long corsMaxAge = 60;
 
 	private static final Logger logger = LoggerFactory.getLogger(KeycloakSecurityConfig.class);
 
@@ -75,19 +74,19 @@ public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
 		super.configure(http);
 		logger.error("Inside configure method");
 		http.cors()
-			.and()
-			.authorizeRequests()
-			.antMatchers("/").permitAll()
-			.antMatchers("/home").permitAll()
-			.mvcMatchers("/logout.do").permitAll()
-			.antMatchers("/fhir/**")
-			.authenticated()
-			.and()
-			.csrf()
-			.ignoringAntMatchers("/fhir/**")
-			.and()
-			.logout()
-			.logoutRequestMatcher(new AntPathRequestMatcher("logout.do", "GET"));
+				.and()
+				.authorizeRequests()
+				.antMatchers("/").permitAll()
+				.antMatchers("/home").permitAll()
+				.mvcMatchers("/logout.do").permitAll()
+				.antMatchers("/fhir/**")
+				.authenticated()
+				.and()
+				.csrf()
+				.ignoringAntMatchers("/fhir/**")
+				.and()
+				.logout()
+				.logoutRequestMatcher(new AntPathRequestMatcher("logout.do", "GET"));
 
 	}
 

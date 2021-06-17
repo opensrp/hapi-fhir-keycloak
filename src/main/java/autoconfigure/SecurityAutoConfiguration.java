@@ -20,7 +20,6 @@ package autoconfigure;
  * #L%
  */
 
-
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
@@ -33,7 +32,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
  * @author Reham Muzzamil
  */
 @Configuration
-@AutoConfigureAfter({KeycloakSecurityConfig.class})
+@AutoConfigureAfter({ KeycloakSecurityConfig.class })
 @EnableWebSecurity
 @Import({ KeycloakSecurityConfig.class })
 public class SecurityAutoConfiguration {
