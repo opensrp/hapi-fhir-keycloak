@@ -72,7 +72,7 @@ public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		super.configure(http);
-		logger.error("Inside configure method");
+		logger.info("Inside configure method");
 		http.cors()
 				.and()
 				.authorizeRequests()

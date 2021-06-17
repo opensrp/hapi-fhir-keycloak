@@ -1,3 +1,3 @@
 # Opensrp Server FHIR Security Auth
 
-This repo consists of providing Authentication support via Keycloak.
+This repository provides spring security authentication configuration through Keycloak authorisation servers.
