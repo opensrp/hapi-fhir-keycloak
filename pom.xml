@@ -22,19 +22,6 @@
             <version>${spring_boot_version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <!-- @ConfigurationProperties annotation processing (metadata for IDEs) -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
-
         <!-- Test dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -45,22 +32,6 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>log4j-over-slf4j</artifactId>
-            <scope>test</scope>
-            <version>1.7.30</version>
         </dependency>
         <dependency>
             <groupId>org.keycloak</groupId>

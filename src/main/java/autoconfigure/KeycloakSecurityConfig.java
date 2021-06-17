@@ -101,7 +101,7 @@ public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
 			.and().ignoring().antMatchers("/home")
 			.and().ignoring().antMatchers("/*")
 			.and().ignoring().antMatchers("/fhir/metadata");
-//		/* @formatter:on */
+		/* @formatter:on */
 	}
 
 	@Bean
