@@ -1,1 +1,16 @@
-/hapi-fhir-opensrp-security-config.iml
+# Default ignored files
+/shelf/
+/workspace.xml
+target/
+.project
+.classpath
+.settings/
+.DS_Store
+.idea/
+*.iml
+*.ipr
+*.iws
+logfile
+*.log*
+.springBeans
+.gradle/
