@@ -9,8 +9,9 @@ It allows the following functionality
 1. Access control to HAPI FHIR endpoints via roles and user groups created on keycloak. 
 
 
+## Additional dependencies
 
-### Spotless licensee and formatting
+### Spotless license update and formatting
 
 Spotless is a general purpose formatting plugin that we are using to manage our file formatting and license addition to 
 our project files. Read more about the spotless integration [here](https://github.com/diffplug/spotless/tree/main/plugin-maven)
