@@ -1,15 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>org.smartregister</groupId>
-
-    <artifactId>hapi-fhir-opensrp-security-config</artifactId>
+    <artifactId>hapi-fhir-keycloak</artifactId>
     <packaging>jar</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <name>opensrp-server-fhir-security-auth</name>
-    <description>FHIR Security Authentication module</description>
-    <url>https://github.com/opensrp/opensrp-server-fhir-security-auth</url>
+    <name>hapi-fhir-keycloak</name>
+    <description>Keycloak --> Hapi FHIR authentication module</description>
+    <url>https://github.com/opensrp/hapi-fhir-keycloak</url>
 
     <properties>
         <spring_boot_version>2.4.1</spring_boot_version>
