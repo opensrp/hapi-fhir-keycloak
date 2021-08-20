@@ -20,7 +20,6 @@ import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 /**
  * {@link EnableAutoConfiguration Auto-configuration} for HAPI FHIR.
@@ -28,7 +27,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
  * @author Reham Muzzamil
  */
 @Configuration
-@AutoConfigureAfter({KeycloakSecurityConfig.class})
-@EnableWebSecurity
-@Import({KeycloakSecurityConfig.class})
-public class SecurityAutoConfiguration {}
+@AutoConfigureAfter({ KeycloakSecurityConfig.class })
+@Import({ KeycloakSecurityConfig.class, DisableSecurityConfig.class })
+public class SecurityAutoConfiguration {
+}

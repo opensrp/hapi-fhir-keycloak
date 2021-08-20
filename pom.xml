@@ -4,7 +4,7 @@
 	<groupId>org.smartregister</groupId>
 	<artifactId>hapi-fhir-keycloak</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>hapi-fhir-keycloak</name>
 	<description>Keycloak --> Hapi FHIR authentication module</description>
 	<url>https://github.com/opensrp/hapi-fhir-keycloak</url>
@@ -15,11 +15,6 @@
 	</properties>
 	<dependencies>
 		<!-- Compile dependencies -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-			<version>${spring_boot_version}</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.keycloak</groupId>
@@ -32,10 +27,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
 		</dependency>
 		<!--Spotless dependency to format the code license header -->
 		<dependency>
