@@ -57,7 +57,7 @@ public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
     private static final String CORS_ALLOWED_HEADERS =
             "origin,content-type,accept,x-requested-with,Authorization";
 
-    private String opensrpAllowedSources = "";
+    private String opensrpAllowedSources = "*";
 
     private long corsMaxAge = 60;
 

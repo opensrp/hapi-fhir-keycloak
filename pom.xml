@@ -4,7 +4,7 @@
 	<groupId>org.smartregister</groupId>
 	<artifactId>hapi-fhir-keycloak</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>hapi-fhir-keycloak</name>
 	<description>Keycloak --> Hapi FHIR authentication module</description>
 	<url>https://github.com/opensrp/hapi-fhir-keycloak</url>
@@ -42,6 +42,19 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<name>Nexus Snapshots Repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+		<repository>
+			<id>nexus-releases</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+		</repository>
+	</distributionManagement>
 
 	<dependencyManagement>
 		<dependencies>
