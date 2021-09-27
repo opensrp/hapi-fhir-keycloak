@@ -4,7 +4,7 @@
 	<groupId>org.smartregister</groupId>
 	<artifactId>hapi-fhir-keycloak</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>hapi-fhir-keycloak</name>
 	<description>Keycloak --> Hapi FHIR authentication module</description>
 	<url>https://github.com/opensrp/hapi-fhir-keycloak</url>
