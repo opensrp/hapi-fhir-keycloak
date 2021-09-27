@@ -15,11 +15,6 @@
 	</properties>
 	<dependencies>
 		<!-- Compile dependencies -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
-			<version>${spring_boot_version}</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.keycloak</groupId>
@@ -32,10 +27,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
 		</dependency>
 		<!--Spotless dependency to format the code license header -->
 		<dependency>
