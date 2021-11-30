@@ -99,6 +99,8 @@ public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
                 .permitAll()
                 .antMatchers("/home")
                 .permitAll()
+                .antMatchers("/fhir/Composition")
+                .permitAll()
                 .mvcMatchers("/logout.do")
                 .permitAll()
                 .antMatchers("/fhir/**")
