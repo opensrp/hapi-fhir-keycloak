@@ -23,8 +23,6 @@ import static org.springframework.http.HttpMethod.PUT;
 
 import java.util.Arrays;
 
-import org.keycloak.adapters.KeycloakConfigResolver;
-import org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver;
 import org.keycloak.adapters.springsecurity.KeycloakConfiguration;
 import org.keycloak.adapters.springsecurity.authentication.KeycloakAuthenticationProvider;
 import org.keycloak.adapters.springsecurity.client.KeycloakClientRequestFactory;
@@ -36,6 +34,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Scope;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -52,6 +51,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 @ConditionalOnProperty(prefix = "keycloak", name = "enabled", havingValue = "true", matchIfMissing = true)
 @KeycloakConfiguration
+@Import({ KeycloakConfigResolverConfig.class })
 public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
 
     private static final String CORS_ALLOWED_HEADERS =
@@ -75,11 +75,6 @@ public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
                 keycloakAuthenticationProvider();
         keycloakAuthenticationProvider.setGrantedAuthoritiesMapper(new SimpleAuthorityMapper());
         auth.authenticationProvider(keycloakAuthenticationProvider);
-    }
-
-    @Bean
-    public KeycloakConfigResolver keycloakConfigResolver() {
-        return new KeycloakSpringBootConfigResolver();
     }
 
     @Bean
