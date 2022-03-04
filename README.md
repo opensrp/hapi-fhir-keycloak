@@ -20,7 +20,7 @@ In order to extend this project, you should have:
 - Apache Maven build tool (the newest version)
 
 ### Code conventions
-- The code conversions used for this project can be found [here](https://github.com/opensrp/hapi-fhir-keycloak/wiki)
+- The code conventions used for this project can be found [here](https://github.com/opensrp/hapi-fhir-keycloak/wiki)
 
 ## Usage
 
